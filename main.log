@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2022.12.1)  9 DEC 2022 00:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2022.12.1)  9 DEC 2022 01:04
 entering extended mode
 **./main.tex
 (main.tex
@@ -1710,7 +1710,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  43451 strings out of 478889
- 916641 string characters out of 7600833
+ 917418 string characters out of 7600833
  81789110 words of memory out of 161498669
  60428 multiletter control sequences out of 15000+600000
  635704 words of font info for 178 fonts, out of 799999 for 9000
