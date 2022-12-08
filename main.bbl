@@ -1,0 +1,255 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{ynt/global//global/global}
+  \entry{misner1973gravitation}{book}{}
+    \name{author}{3}{}{%
+      {{hash=MCW}{%
+         family={Misner},
+         familyi={M\bibinitperiod},
+         given={Charles\bibnamedelima W},
+         giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=TKS}{%
+         family={Thorne},
+         familyi={T\bibinitperiod},
+         given={Kip\bibnamedelima S},
+         giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=WJA}{%
+         family={Wheeler},
+         familyi={W\bibinitperiod},
+         given={John\bibnamedelima Archibald},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Macmillan}%
+    }
+    \strng{namehash}{MCWTKSWJA1}
+    \strng{fullhash}{MCWTKSWJA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{1}
+    \field{sortinithash}{1}
+    \field{title}{Gravitation}
+    \field{year}{1973}
+  \endentry
+
+  \entry{brugmann1996adaptive}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BB}{%
+         family={Br{\"u}gmann},
+         familyi={B\bibinitperiod},
+         given={Bernd},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{BB1}
+    \strng{fullhash}{BB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{1}
+    \field{sortinithash}{1}
+    \field{number}{12}
+    \field{pages}{7361}
+    \field{title}{Adaptive mesh and geodesically sliced Schwarzschild spacetime
+  in 3+ 1 dimensions}
+    \field{volume}{54}
+    \field{journaltitle}{Physical Review D}
+    \field{year}{1996}
+  \endentry
+
+  \entry{alcubierre2008introduction}{book}{}
+    \name{author}{1}{}{%
+      {{hash=AM}{%
+         family={Alcubierre},
+         familyi={A\bibinitperiod},
+         given={Miguel},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {OUP Oxford}%
+    }
+    \strng{namehash}{AM1}
+    \strng{fullhash}{AM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{2}
+    \field{sortinithash}{2}
+    \field{title}{Introduction to 3+ 1 numerical relativity}
+    \field{volume}{140}
+    \field{year}{2008}
+  \endentry
+
+  \entry{baumgarte2010numerical}{book}{}
+    \name{author}{2}{}{%
+      {{hash=BTW}{%
+         family={Baumgarte},
+         familyi={B\bibinitperiod},
+         given={Thomas\bibnamedelima W},
+         giveni={T\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=SSL}{%
+         family={Shapiro},
+         familyi={S\bibinitperiod},
+         given={Stuart\bibnamedelima L},
+         giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{BTWSSL1}
+    \strng{fullhash}{BTWSSL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{2}
+    \field{sortinithash}{2}
+    \field{title}{Numerical relativity: solving Einstein's equations on the
+  computer}
+    \field{year}{2010}
+  \endentry
+
+  \entry{wald2010general}{book}{}
+    \name{author}{1}{}{%
+      {{hash=WRM}{%
+         family={Wald},
+         familyi={W\bibinitperiod},
+         given={Robert\bibnamedelima M},
+         giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {University of Chicago press}%
+    }
+    \strng{namehash}{WRM1}
+    \strng{fullhash}{WRM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{2}
+    \field{sortinithash}{2}
+    \field{title}{General relativity}
+    \field{year}{2010}
+  \endentry
+
+  \entry{gourgoulhon20123+}{book}{}
+    \name{author}{1}{}{%
+      {{hash=GE}{%
+         family={Gourgoulhon},
+         familyi={G\bibinitperiod},
+         given={Eric},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Science \& Business Media}%
+    }
+    \strng{namehash}{GE1}
+    \strng{fullhash}{GE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{2}
+    \field{sortinithash}{2}
+    \field{title}{3+ 1 formalism in general relativity: bases of numerical
+  relativity}
+    \field{volume}{846}
+    \field{year}{2012}
+  \endentry
+
+  \entry{zee2013einstein}{book}{}
+    \name{author}{1}{}{%
+      {{hash=ZA}{%
+         family={Zee},
+         familyi={Z\bibinitperiod},
+         given={Anthony},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Princeton University Press}%
+    }
+    \strng{namehash}{ZA1}
+    \strng{fullhash}{ZA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{2}
+    \field{sortinithash}{2}
+    \field{title}{Einstein gravity in a nutshell}
+    \field{volume}{14}
+    \field{year}{2013}
+  \endentry
+
+  \entry{vindana2018simulation}{article}{}
+    \name{author}{2}{}{%
+      {{hash=VW}{%
+         family={Vindana},
+         familyi={V\bibinitperiod},
+         given={WMHP},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=WGK}{%
+         family={Wijewardena\bibnamedelima Gamalath},
+         familyi={W\bibinitperiod\bibinitdelim G\bibinitperiod},
+         given={KAIL},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Scientific Publishing House „DARWIN”}%
+    }
+    \strng{namehash}{VWWGK1}
+    \strng{fullhash}{VWWGK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{2}
+    \field{sortinithash}{2}
+    \field{pages}{106\bibrangedash 125}
+    \field{title}{Simulation of rotating black holes}
+    \field{volume}{114}
+    \field{journaltitle}{World Scientific News}
+    \field{year}{2018}
+  \endentry
+
+  \entry{schutz2022first}{book}{}
+    \name{author}{1}{}{%
+      {{hash=SB}{%
+         family={Schutz},
+         familyi={S\bibinitperiod},
+         given={Bernard},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge university press}%
+    }
+    \strng{namehash}{SB1}
+    \strng{fullhash}{SB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{2}
+    \field{sortinithash}{2}
+    \field{title}{A first course in general relativity}
+    \field{year}{2022}
+  \endentry
+\enddatalist
+\endinput

@@ -1,0 +1,139 @@
+% Chapter Template
+
+\chapter{Numerical simulation} % Main chapter title
+
+\label{Chapter3} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+
+\section{Introduction}
+
+In this chapter, we describe the initial data set required prior to simulation, the numerical method for evolution, and the results.
+
+\section{Schwarzschild black hole}
+\subsection{Types of black holes}
+Accordingly to the No-Hair theorem, all black holes solutions of the Einstein-Maxwell equation of electromagnetism in general relativity can be completely characterized by their observable classical parameters mass, electric charge and angular momentum.
+
+The schwarzschild metric describes the spacetime geometry exterior to any spherical collapsing body. Kerr metric describes the geometry of empty spacetime around a rotating uncharged axially-symmetric black hole with quasi-spherical event horizon. There are also the Reissner-Nordström metric and the Kerr-Newman metric that describe charged black holes\parencite{vindana2018simulation, wald2010general}. In Table~\ref{tab:typeofblackholes}, it can be seen that the types of black holes are classified according to angular momentum and charge.
+\begin{table}[H]
+	\caption{Classifications of black holes.}
+	\label{tab:typeofblackholes}
+	\centering
+	\begin{tabular}{c | c c}
+		\toprule
+		 & \textbf{Non-rotating} ($J=0$) & \textbf{Rotating} ($J>0$) \\
+		\midrule
+		\textbf{Uncharged} ($Q=0$) & Schwarzschild & Kerr\\
+		\textbf{Charged}	($Q\neq0$) & Reissner-Nordström & Kerr-Newman\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsection{Isotropic coordinate}
+
+In this report, we choose the simplest form, the Schwarzschild black hole. The original form of the Schwarzschild metric is
+\begin{equation}
+	\dd{s^2} = - \qty(1 - \frac{2M}{r}) \dd{t^2} + \qty(1 - \frac{2M}{r})^{-1}\dd{r^2}+r^2\qty(\dd{\theta^2}+\sin^2\theta\dd{\phi^2}).
+\end{equation}
+When $r$ goes $2M$, $g_{rr}$ diverges. However, this is just a coordinate singularity, like the problem that occurs at the north and south poles in the spherical coordinate system\parencite{zee2013einstein}. This can be solved by choosing another coordinate system, such as the Kruskal coordinate system.
+
+We can avoid coordinate singularity at $r=2M$ by adopting an isotropic coordinate system by substituting $r=\bar{r}(1+M/2\bar{r})^2$, we get
+\begin{equation}
+	\dd{s^2} = - \qty(\frac{1-M/(2\bar{r})}{1+M/(2\bar{r})})^2 \dd{t^2} + \qty(1 + \frac{M}{2\bar{r}})^{4}\qty(\dd{\bar{r}^2}+\bar{r}^2\dd{\theta^2}+\bar{r}^2\sin^2\theta\dd{\phi^2}).
+\end{equation}
+This coordinate system describes the area outside the event horizon $\bar{r}=M/2$. The reason for using this coordinate system is as follows.
+\begin{enumerate}
+	\item A spatial metric is numerically valid in any space where $r>M/2$.
+	\item Since spatial metrics are flat, they can be replaced with Cartesian coordinates, which is more useful for numerical calculations\parencite{brugmann1996adaptive}.
+\end{enumerate}
+So, in practice we use metric:
+\begin{equation}
+	\dd{s^2} = - \qty(\frac{1-M/(2r)}{1+M/(2r)})^2 \dd{t^2} + \qty(1 + \frac{M}{2r})^{4}\qty(\dd{x^2}+\dd{y^2}+\dd{z^2}),
+\end{equation}
+where $r = \sqrt{x^2 + y^2 + z^2}$.
+
+\section{Gauge conditions}
+Eq. (\ref{eq:hamiltonian_constraint})-(\ref{eq:evoultion_extrinsic}) does not contain any time derivative of lapse function $N$ nor of the shift vector $\shiftvec$. This means that $N$ and $\shiftvec$ are not dynamical variables. Therefore, we may choose the lapse and shift freely, without changing the physical solution $g$ of the Einstein equation\parencite{gourgoulhon20123+}.
+
+In this simulation, we choose the lapse function and the shift vector
+\begin{equation}
+	N = \frac{1-M/(2r)}{1+M/(2r)}, \qquad \shiftvec = 0.
+\end{equation}
+
+\section{Initial data}
+After 3+1 decomposition, we should evolve forward in time some initial data. Instead of solving Hamiltonian and momentum constraint, we use well-known initial data from isotropic coordinates of Schwarzshcild metric. So the initial spatial metric becomes $\gamma_{ij}=(1+M/(2r))^4\delta_{ij}$ and the initial extrinsic curvature becomes $K_{ij} = 0$ since there is no time-dependent and zero shift.
+
+We will show that these data satisfies Eq. (\ref{eq:hamiltonian_constraint}, \ref{eq:momentum_constraint}). Since $E$ and $p_i$ are all $0$ in vacuum space and $K_{ij}=0$, the momentum constraint is naturally satisfied. Now, to satisfy the hamiltonian constraint, we need to show that the 3-metric Ricci scalar $R$ is $0$. Let's use a spherical coordinate system here. The non-vanishing Ricci tensor is:
+\begin{align}
+	R_{rr} &= - \frac{8 M}{r \left(M + 2 r\right)^{2}},\\
+	R_{\theta\theta} &= \frac{4 M r}{\left(M + 2 r\right)^{2}},\\
+	R_{\phi\phi} &= \frac{4 M r \sin^{2}{\left(\theta \right)}}{\left(M + 2 r\right)^{2}}.
+\end{align}
+Therefore, it can be seen that the 3-metric Ricci scalar $R = \gamma^{ij}R_{ij} = 0$, and it can be confirmed that the given constraint condition is well satisfied.
+
+\section{Numerical methods}
+\subsection{Finite difference method}
+This simulation uses the finite difference method. The Taylor expansion of the function $f(x)$ in $x_0$ is
+\begin{equation}
+	f(x_0 + h) = f(x_0) + \frac{f'(x_0)}{1!}h + \frac{f^{(2)}(x_0)}{2!}h^2 + \cdots + \frac{f^{(n)}(x_0)}{n!}h^n+ \cdots .
+\end{equation}
+Arranging this, we get
+\begin{equation}
+	\begin{aligned}
+		\frac{f(x_0 + h) - f(x_0)}{h} &= f'(x_0) + \frac{f^{(2)}(x_0)}{2!}h + \cdots \\
+		&= f'(x_0) + \mathcal{O}(h).
+	\end{aligned}
+\end{equation}
+Accuracy is on the order of $\mathrm{O}(h)$.
+
+The central difference method selects the function value from $x-h$ and $x+h$, respectively, and has a more accurate error of $\mathcal{O}(h^2)$.
+\begin{equation}
+	f'(x_0) = \frac{f(x+ h) - f(x - h)}{2h} + \mathcal{O}(h^2).
+\end{equation}
+
+\subsection{Boundary condition}
+
+The isotropic coordinates of the schwarzschild metric only describe the region outside the black hole horizon, i.e. $r=\frac{M}{2}$. Therefore, $\gamma_{ij}$ and $K_{ij}$ did not evolve in the region of $r\le \frac{M}{2}$.
+
+At the boundary outside the grid, the physical quantity at the corresponding point was calculated using linear extrapolation. For example, when we need to find the derivative at $f_i$,
+\begin{align}
+	(\partial f)_{i - 2} &= \frac{f_{i - 1} - f_{i - 3}}{2h},\\
+	(\partial f)_{i - 1} &= \frac{f_{i} - f_{i - 2}}{2h}.
+\end{align}
+
+Therefore, we get
+\begin{equation}
+	\begin{aligned}
+			(\partial f)_{i} &= \frac{f_{i - 1} - f_{i - 3}}{2h}\\
+			&= \frac{2f_i - f_{i - 1} - 2f_{i - 2} + f_{i - 3}}{2h}.
+	\end{aligned}
+\end{equation}
+
+Alternatively, there is a way to use a fixed value at the grid boundary, as well as at the black hole horizon.
+
+\subsection{Inverse matrix}
+
+Cofactors were used to find the inverse matrix. See Appendix \ref{AppendixA}.
+
+\section{Grid setting}
+
+The size of the grid is $100^3$, the mass of the black hole is $0.2M$, and the grid distance is $0.01M$. Thus, the horizon of a black hole corresponds to $0.1 M$, i.e. the surface of a sphere with a radius of 10 grids.
+
+\section{Result}
+
+The results obtained at first do not change with time as shown in Fig. \ref{fig:0_data0}.
+\begin{figure}[H]
+	\centering
+	\input{Figures/0_data0.pgf}
+	\caption{Flamm's paraboloid from the first simulation. It represents $\gamma_{xx}$ in the equatorial plane where $\theta = \frac{\pi}{2}$. The slope at each point represents the magnitude of $\gamma_{xx}$.}
+	\label{fig:0_data0}
+\end{figure}
+
+However, when the errors in the coordinate system of the lapse function and minor errors were corrected, the metric could no longer be considered static as shown in Figure 1.
+
+\begin{figure}[H]
+	\centering
+	\input{Figures/data_by_time.pgf}
+	\caption{The unidirectional component of Flamm's paraboloid as a function of time. Even in a very short time interval, errors gradually accumulate over time, especially distortions can be seen.}
+	\label{fig:data_by_time}
+\end{figure}
+
+

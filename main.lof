@@ -1,0 +1,24 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}\relax 
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.1}{\ignorespaces A foliation of the spacetime. There are time vector $\bm {\partial }_t$, normal evolution vector $N\bm {n}$, and shift vector $\bm {\beta }$ satisfying $\bm {\partial }_t= N\bm {n} + \bm {\beta }$ between the two hypersurfaces $\Sigma _t$, $\Sigma _{t+\delta t}$.\relax }}{2}{figure.caption.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.2}{\ignorespaces A brief schema of numerical relativity.\relax }}{2}{figure.caption.13}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Flamm's paraboloid from the first simulation. It represents $\gamma _{xx}$ in the equatorial plane where $\theta = \frac {\pi }{2}$. The slope at each point represents the magnitude of $\gamma _{xx}$.\relax }}{13}{figure.caption.74}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The unidirectional component of Flamm's paraboloid as a function of time. Even in a very short time interval, errors gradually accumulate over time, especially distortions can be seen.\relax }}{14}{figure.caption.75}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces It shows the value of $\mathcal {H}\equiv R+K^2-K_{ij}K^{ij}$, the left side of the Hamiltonian constraint, according to $r$.\relax }}{16}{figure.caption.87}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces It shows the value of $\mathcal {H}\equiv R+K^2-K_{ij}K^{ij}$, the left side of the Hamiltonian constraint, according to $r$. Compared to Fig. \ref {fig:hamil_err}, the resolution has doubled.\relax }}{17}{figure.caption.88}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }

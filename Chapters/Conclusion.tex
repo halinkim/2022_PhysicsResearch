@@ -1,0 +1,74 @@
+% Chapter Template
+
+\chapter{Discussion and Conclusion} % Main chapter title
+
+\label{Chapter4} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
+
+\section{Analytical calculation of evolution values}
+
+In order for the metric to be static according to time, $K_{ij}=0$ must always be present. Also, to keep $K_{ij} = 0$, in Eq. (\ref{eq:evoultion_extrinsic}), $-D_i D_j N + NR_{ij} = 0$. Let's check if this is true by calculating $K_{rr}$ in the spherical coordinate system.
+
+The lapse function is 
+\begin{equation}
+	N = \frac{1 - M/(2r)}{1+M/(2r)},
+\end{equation}
+And the covariant derivative of lapse function is
+\begin{equation}
+	D_i D_j N = \pdv{N}{x^i}{x^j} - \Gamma^k_{ij}\pdv{N}{x^k}.
+\end{equation}
+When $i=j=r$,
+\begin{equation}
+	\pdv{N}{x^r}{x^r} = - \frac{16 M}{\left(M + 2 r\right)^{3}}.
+\end{equation}
+
+Since $N$ is a function of $r$ only, the significant term in the Christoffel symbols is
+\begin{equation}
+	\Gamma^r_{rr} = - \frac{8 M}{r \left(M + 2 r\right)^{2}}.
+\end{equation}
+
+Therefore, we get
+\begin{equation}
+	D_rD_rN = - \frac{16 M \left(M r + 2 M + 2 r^{2}\right)}{r \left(M + 2 r\right)^{4}}.
+\end{equation}
+
+On the other hand, the Ricci tensor is
+\begin{equation}
+	R_{rr} = - \frac{8 M}{r \left(M + 2 r\right)^{2}},
+\end{equation}
+we get
+\begin{equation}
+	NR_{rr} = - \frac{8 M \left(- M + 2 r\right)}{r \left(M + 2 r\right)^{3}}.
+\end{equation}
+
+Therefore,
+\begin{equation}
+	-D_rD_rN + NR_{rr} = \frac{8 M^{2} \left(M + 2 r + 4\right)}{r \left(M + 2 r\right)^{4}}
+\end{equation}
+Contrary to expectations, it does not become 0.
+
+\section{How about initial data?}
+Let's check that the simulation calculates the Hamiltonian constraints well, at least for the initial data. In the case of the momentum constraint, since $K_{ij} = 0$, the condition is obviously satisfied.
+\begin{figure}[H]
+	\centering
+	\input{Figures/hamil_err.pgf}
+	\caption{It shows the value of $\mathcal{H}\equiv R+K^2-K_{ij}K^{ij}$, the left side of the Hamiltonian constraint, according to $r$.}
+	\label{fig:hamil_err}
+\end{figure}
+It is close to the expected value of 0, but it can be seen that the error gets worse as you get closer to the black hole horizon. In this simulation, since the numerical derivative is calculated on the order of $\mathcal{O}(h^2)$, if the grid spacing is reduced from 0.01 to 0.005, that is, by a factor of 2, the error should be reduced by a factor of 4, which is shown in Figure \ref{fig:hamil_err1}.
+
+\begin{figure}[H]
+	\centering
+	\input{Figures/hamil_err1.pgf}
+	\caption{It shows the value of $\mathcal{H}\equiv R+K^2-K_{ij}K^{ij}$, the left side of the Hamiltonian constraint, according to $r$. Compared to Fig. \ref{fig:hamil_err}, the resolution has doubled.}
+	\label{fig:hamil_err1}
+\end{figure}
+
+\section{Conclusion}
+
+
+
+The off-diagonal terms of $\gamma_{ij}$ have a slight relative error of the order of $10^{-7}$ in comparison with diagonal terms. This accumulates over time. Ignoring these small errors, we were able to confirm that the spatial metric was static and still spherically symmetric. We should either accept a variation form such as the BSSN equation, or try to do more accurate numerical calculations for better simulations.

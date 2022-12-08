@@ -1,0 +1,62 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Why we need numerical relativity?}{1}{section.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Introduction to numerical relativity}{1}{section.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}Notation and conventions}{3}{section.14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}The ADM Equations}{5}{chapter.15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Introduction}{5}{section.16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}The Einstein Equation}{5}{section.17}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Constraint equations}{5}{section.19}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Evolution equations}{6}{section.29}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}Summary}{8}{section.40}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Numerical simulation}{9}{chapter.45}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Introduction}{9}{section.46}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Schwarzschild black hole}{9}{section.47}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.1}Types of black holes}{9}{subsection.48}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.2}Isotropic coordinate}{10}{subsection.50}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Gauge conditions}{10}{section.56}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Initial data}{11}{section.58}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.5}Numerical methods}{11}{section.62}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.1}Finite difference method}{11}{subsection.63}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.2}Boundary condition}{12}{subsection.67}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.3}Inverse matrix}{12}{subsection.71}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.6}Grid setting}{13}{section.72}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.7}Result}{13}{section.73}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Discussion and Conclusion}{15}{chapter.76}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Analytical calculation of evolution values}{15}{section.77}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}How about initial data?}{16}{section.86}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Conclusion}{17}{section.89}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{19}{appendix.90}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}Used code}{19}{section.91}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{33}{appendix*.92}%

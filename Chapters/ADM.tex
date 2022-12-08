@@ -1,0 +1,153 @@
+% Chapter Template
+
+\chapter{The ADM Equations} % Main chapter title
+
+\label{Chapter2} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+
+
+
+\section{Introduction}
+
+In this chapter, we present how Einstein's equations can be decomposed into two constraints and two evolution equations. The development in this chapter follows \parencite{gourgoulhon20123+}.
+
+\section{The Einstein Equation}
+\emph{Einstein's equation} is
+\begin{equation}
+	\label{eq:einstein_equation}
+	\dmf \bm{R} - \frac{1}{2}\dmf R\bm{g} = 8 \pi \bm{T}.
+\end{equation}
+We limit cosmological constant $\Lambda = 0$.
+
+\section{Constraint equations}
+
+Let's start with the \emph{Gauss relation}
+\begin{equation}
+	\label{eq:gauss_relation}
+	\gamma^\mu _\alpha \gamma ^\nu_\beta \gamma^\gamma_\rho \gamma^\sigma_\delta \dmf R^\rho_{\sigma \mu \nu} = R^\gamma_{\delta\alpha\beta} + K^\gamma_\alpha K_{\delta\beta} - K^\gamma_\beta K_{\alpha\delta}.
+\end{equation}
+We can obtain \emph{scalar Gauss relation}
+\begin{equation}
+	\label{eq:scalar_gauss_relation}
+	\dmf R + 2 \dmf R_{\mu\nu}n^\mu n^\nu = R + K^2 - K_{ij}K^{ij}
+\end{equation}
+by contract the Gauss relation Eq. (\ref{eq:gauss_relation}) on the indices $\gamma$ and $\alpha$ and use $\gamma^\mu_\alpha \gamma^\alpha_\rho = \gamma^\mu_\rho=\delta^\mu_\rho+n^\mu n_\rho$, and take its trace with respect to $\bm{\gamma}$.
+
+From Eq. (\ref{eq:einstein_equation}), after full projection perpendicular to hypersurface $\Sigma_t$, we get
+\begin{equation}
+	\label{eq:bilinear_einstein_equation}
+	\dmf \bm{R}(\bm{n}, \bm{n}) + \frac{1}{2}\dmf R = 8\pi \bm{T}(\bm{n}, \bm{n}) =: 8\pi E
+\end{equation}
+since $\bm{g}(\bm{n}, \bm{n}) = -1$. By combining Eq. (\ref{eq:scalar_gauss_relation}), (\ref{eq:bilinear_einstein_equation}), we get
+\begin{equation}
+	R+K^2 - K_{ij}^{ij} = 16\pi E
+\end{equation}
+which is called the \emph{Hamiltonian constraint}.
+
+Now let us project Eq. (\ref{eq:einstein_equation}) onto $\Sigma_t$ and normal $\bm{n}$,
+\begin{equation}
+	\label{eq:mixed_einstein}
+	\dmf \bm{R}(\bm{n}, \vec{\bm{\gamma}}(.)) - \frac{1}{2} \dmf R \bm{g}(\bm{n}, \vec{\bm{\gamma}}(.)) = 8\pi \bm{T}(\bm{n}, \vec{\bm{\gamma}}(.)).
+\end{equation}
+
+We can use \emph{Codazzi relation}
+\begin{equation}
+	\label{eq:codazzi_relation}
+	\gamma^\gamma_\rho n^\sigma \gamma^\mu_\alpha\gamma^\nu_\beta \dmf R^\rho_{\sigma \mu \nu} = D_\beta K^\gamma_\alpha - D_\alpha K^\gamma_\beta
+\end{equation}
+to get \emph{contracted Codazzi relation}
+\begin{equation}
+	\gamma^\mu_\alpha n^\nu \dmf R_{\mu \nu} = D_\alpha K - D_\mu K^\mu _\alpha
+\end{equation}
+by contracting the Eq. (\ref{eq:codazzi_relation}) on the indices $\alpha$ and $\gamma$.
+
+Since $\bm{g}(\bm{n}, \vec{\bm{\gamma}}(.))$ in Eq. (\ref{eq:mixed_einstein}) is equal to $0$ and by introducing \emph{matter momentum density} $\bm{p}:= - \bm{T}(\bm{n}, \vec{\bm{\gamma}}(.))$, we get
+\begin{equation}
+	\bm{D}\cdot \vec{\bm{K}} - \bm{D}K = 8 \pi \bm{p},
+\end{equation}
+or, in components,
+\begin{equation}
+	D_j K^j_i - D_i K = 8 \pi p_i
+\end{equation}
+which is called the \emph{momentum constraint}.
+
+
+
+\section{Evolution equations}
+
+Since we can write time vector in to sum of the normal evolution vector $\bm{m} := N\bm{n}$ and the shift vector $\shiftvec$,
+\begin{equation}
+	\label{eq:timevec}
+	\timevec =: \bm{m} + \shiftvec,
+\end{equation}
+we can write
+\begin{equation}
+	\label{eq:lie_t}
+	\mathcal{L}_{\bm{m}}\bm{T} = \mathcal{L}_{\timevec}\bm{T} - \mathcal{\shiftvec}\bm{T},
+\end{equation}
+for $\bm{T}$ be any tensor field tangent to $\Sigma_t$. Moreover, Lie derivative is simply obtained by taking the partial derivative of the vector components with respect to $t$. Therefore, Eq. (\ref{eq:lie_t}) can be written as
+\begin{equation}
+	\mathcal{L}_{\bm{m}} T^{i\cdots}_{j\cdots} = \qty(\pdv{t} - \mathcal{L}_{\shiftvec}) T^{i\cdots}_{j\cdots}.
+\end{equation}
+
+By applying it to extrinsic curvature
+\begin{equation}
+	\mathcal{L}_{\bm{m}} \bm{\gamma} = -2N \bm{K},
+\end{equation}
+it becomes
+\begin{equation}
+	\qty(\pdv{t} - \mathcal{L}_{\shiftvec})\gamma_{ij} = -2NK_{ij},
+\end{equation}
+which is called the \emph{evolution equation for the spatial metric}.
+
+If we applying the operator $\vec{\bm{\gamma}}^{\ast}$ to the Einstein equation,
+\begin{equation}
+	\vec{\bm{\gamma}}^{\ast} \dmf \bm{R} = 8 \pi \qty( \vec{\bm{\gamma}}^{\ast} \bm{T} - \frac{1}{2}T \vec{\bm{\gamma}}^{\ast} \bm{g}).
+\end{equation}
+From the 3+1 decomposition of the Riemann tensor, we obtained
+\begin{equation}
+	\vec{\bm{\gamma}}^{\ast} \dmf \bm{R} = -\frac{1}{N} \mathcal{L}_{\bm{m}} \bm{K}- \frac{1}{N}\bm{D}\bm{D} N + \bm{R} + K \bm{K} - 2 \bm{K} \cdot \vec{\bm{K}}.
+\end{equation}
+Therefore
+\begin{equation}
+	\label{eq:full_projection}
+	- \frac{1}{N} \mathcal{L}_{\bm{m}}\bm{K} - \frac{1}{N}\bm{D}\bm{D}N + \bm{R} + K \bm{K} - 2\bm{K}\cdot \vec{\bm{K}} = 8 \pi \qty [\bm{S} - \frac{1}{2}(S-E)\bm{\gamma}],
+\end{equation}
+where \emph{matter stress tensor} $\bm{S}:= \vec{\bm{\gamma}}^{\ast} \bm{T}$.
+
+The result from property that the Lie derivative along $\bm{m}$ of any tensor field $\bm{T}$ tangent to $\Sigma_t$ is a tensor field tangent to $\Sigma_t$, Eq. (\ref{eq:full_projection}) can be written as
+\begin{equation}
+	\mathcal{L}_{\bm{m}}K_{ij} =  -D_i D_j N + N\qty{ R_{ij} + KK_{ij} - 2K_{ik}K^k_j +4\pi \qty[(S-E)\gamma_{ij}-2S_{ij}]}.
+\end{equation}
+From Eq. (\ref{eq:timevec}), we get \emph{evolution equation for the extrinsic curvature}
+\begin{equation}
+	\qty(\pdv{t} - \mathcal{L}_{\shiftvec})K_{ij} = -D_i D_j N + N\qty{ R_{ij} + KK_{ij} - 2K_{ik}K^k_j +4\pi \qty[(S-E)\gamma_{ij}-2S_{ij}]}.
+\end{equation}
+
+\section{Summary}
+In this chapter, we obtained
+the \emph{Hamiltonian constraint}
+\begin{equation}
+	\label{eq:hamiltonian_constraint}
+	R+K^2-K_{ij}K^{ij} = 16\pi E,
+\end{equation}
+the \emph{momentum constraint}
+\begin{equation}
+	\label{eq:momentum_constraint}
+	D_j K^j_i - D_i K = 8 \pi p_i,
+\end{equation}
+the \emph{evolution equation for the spatial metric}
+\begin{equation}
+	\label{eq:evolution_spatial}
+\qty(\pdv{t} - \mathcal{L}_{\shiftvec})\gamma_{ij} = -2NK_{ij},
+\end{equation}
+and the \emph{evolution equation for the extrinsic curvature}
+\begin{equation}
+	\label{eq:evoultion_extrinsic}
+	\qty(\pdv{t} - \mathcal{L}_{\shiftvec})K_{ij} = -D_i D_j N + N\qty{ R_{ij} + KK_{ij} - 2K_{ik}K^k_j +4\pi \qty[(S-E)\gamma_{ij}-2S_{ij}]}.
+\end{equation}
+
+%In ADM equations, the spacetime metric can be written as
+%$$
+%\dd{s^2} = -N^2 \dd{t^2}+\gamma_{ij} \qty(\dd{x^i} + \beta^i\dd{t}) \qty(\dd{x^j}+\beta^j \dd{t}).
+%$$
+
