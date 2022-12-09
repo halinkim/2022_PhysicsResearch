@@ -55,8 +55,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Conclusion}{17}{section.89}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{19}{appendix.90}%
+\contentsline {chapter}{\numberline {A}Used code}{19}{appendix.90}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Used code}{19}{section.91}%
+\contentsline {section}{\numberline {A.1}For evolution and error calculation}{19}{section.91}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Bibliography}{33}{appendix*.92}%

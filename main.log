@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2022.12.1)  9 DEC 2022 01:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2022.12.1)  9 DEC 2022 12:12
 entering extended mode
 **./main.tex
 (main.tex
@@ -1703,7 +1703,7 @@ Overfull \hbox (3.85812pt too wide) in paragraph at lines 326--326
 ] (main.aux (Chapters/Introduction.aux) (Chapters/ADM.aux)
 (Chapters/Simulation.aux) (Chapters/Conclusion.aux) (Appendices/AppendixA.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8A62F4892D84FE450B0E9EE8A40E06B3;4537.
+(rerunfilecheck)             Checksum: 7276A7205BD4397DC8644377AB624A21;4588.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
@@ -1711,7 +1711,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  43451 strings out of 478889
  917418 string characters out of 7600833
- 81789110 words of memory out of 161498669
+ 81789094 words of memory out of 161498653
  60428 multiletter control sequences out of 15000+600000
  635704 words of font info for 178 fonts, out of 799999 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1738,7 +1738,7 @@ uper/sftt1095.pfb><C:/Users/halin/AppData/Local/Programs/MiKTeX/fonts/type1/urw
 urw/palatino/uplr8a.pfb><C:/Users/halin/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/urw/palatino/uplr8a.pfb><C:/Users/halin/AppData/Local/Programs/MiKTeX/fonts/
 type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (47 pages, 2434442 bytes).
+Output written on main.pdf (47 pages, 2433700 bytes).
 PDF statistics:
  705 PDF objects out of 1000 (max. 8388607)
  149 named destinations out of 1000 (max. 500000)
