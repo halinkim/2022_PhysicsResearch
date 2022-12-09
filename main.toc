@@ -11,52 +11,48 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}The ADM Equations}{5}{chapter.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Introduction}{5}{section.16}%
+\contentsline {section}{\numberline {2.1}Constraint equations}{5}{section.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}The Einstein Equation}{5}{section.17}%
+\contentsline {section}{\numberline {2.2}Evolution equations}{6}{section.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Constraint equations}{5}{section.19}%
+\contentsline {section}{\numberline {2.3}Summary}{8}{section.38}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Evolution equations}{6}{section.29}%
+\contentsline {chapter}{\numberline {3}Numerical simulation}{9}{chapter.43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Summary}{8}{section.40}%
+\contentsline {section}{\numberline {3.1}Introduction}{9}{section.44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Numerical simulation}{9}{chapter.45}%
+\contentsline {section}{\numberline {3.2}Schwarzschild black hole}{9}{section.45}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Introduction}{9}{section.46}%
+\contentsline {subsection}{\numberline {3.2.1}Types of black holes}{9}{subsection.46}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Schwarzschild black hole}{9}{section.47}%
+\contentsline {subsection}{\numberline {3.2.2}Isotropic coordinate}{10}{subsection.48}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Types of black holes}{9}{subsection.48}%
+\contentsline {section}{\numberline {3.3}Gauge conditions}{10}{section.54}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Isotropic coordinate}{10}{subsection.50}%
+\contentsline {section}{\numberline {3.4}Initial data}{11}{section.56}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Gauge conditions}{10}{section.56}%
+\contentsline {section}{\numberline {3.5}Numerical methods}{11}{section.60}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Initial data}{11}{section.58}%
+\contentsline {subsection}{\numberline {3.5.1}Finite difference method}{11}{subsection.61}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Numerical methods}{11}{section.62}%
+\contentsline {subsection}{\numberline {3.5.2}Boundary condition}{12}{subsection.65}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.1}Finite difference method}{11}{subsection.63}%
+\contentsline {subsection}{\numberline {3.5.3}Inverse matrix}{12}{subsection.69}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.2}Boundary condition}{12}{subsection.67}%
+\contentsline {section}{\numberline {3.6}Grid setting}{13}{section.70}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.3}Inverse matrix}{12}{subsection.71}%
+\contentsline {section}{\numberline {3.7}Result}{13}{section.71}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}Grid setting}{13}{section.72}%
+\contentsline {chapter}{\numberline {4}Discussion and Conclusion}{15}{chapter.74}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.7}Result}{13}{section.73}%
+\contentsline {section}{\numberline {4.1}Analytical calculation of evolution values}{15}{section.75}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Discussion and Conclusion}{15}{chapter.76}%
+\contentsline {section}{\numberline {4.2}How about initial data?}{16}{section.84}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Analytical calculation of evolution values}{15}{section.77}%
+\contentsline {section}{\numberline {4.3}Conclusion}{17}{section.87}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}How about initial data?}{16}{section.86}%
+\contentsline {chapter}{\numberline {A}Used code}{19}{appendix.88}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Conclusion}{17}{section.89}%
+\contentsline {section}{\numberline {A.1}For evolution and error calculation}{19}{section.89}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Used code}{19}{appendix.90}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}For evolution and error calculation}{19}{section.91}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{33}{appendix*.92}%
+\contentsline {chapter}{Bibliography}{33}{appendix*.90}%

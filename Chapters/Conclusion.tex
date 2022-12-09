@@ -58,7 +58,7 @@ Let's check that the simulation calculates the Hamiltonian constraints well, at 
 	\caption{It shows the value of $\mathcal{H}\equiv R+K^2-K_{ij}K^{ij}$, the left side of the Hamiltonian constraint, according to $r$.}
 	\label{fig:hamil_err}
 \end{figure}
-It is close to the expected value of 0, but it can be seen that the error gets worse as you get closer to the black hole horizon. In this simulation, since the numerical derivative is calculated on the order of $\mathcal{O}(h^2)$, if the grid spacing is reduced from 0.01 to 0.005, that is, by a factor of 2, the error should be reduced by a factor of 4, which is shown in Figure \ref{fig:hamil_err1}.
+It is close to the expected value of 0, but it can be seen that the error gets worse as you get closer to the black hole horizon. In this simulation, since the numerical derivative is calculated on the order of $\mathcal{O}(h^2)$, if the grid spacing is reduced from 0.01 to 0.005, that is, by a factor of 2, the error should be reduced by a factor of 4, which is shown in Figure \ref{fig:hamil_err1}. Overall, $\mathcal{H}$ will approach the theoretical value of 0 when sufficient resolution is provided, and the tendency for $r$ is judged to be the error of the numerical method near the black hole horizon.
 
 \begin{figure}[H]
 	\centering
@@ -70,5 +70,10 @@ It is close to the expected value of 0, but it can be seen that the error gets w
 \section{Conclusion}
 
 
+In this report, we looked at the development process of ADM 3+1 equations using the concept of lapse function and shift vector, Gauss-Codazzi equations in Einstein's equations. To actually confirm this, we proceeded with the process of evolving a Schwarzschild black hole through ADM equations. Through this, it was confirmed that the spatial metric is static within a limited time. It was also confirmed that although the Hamiltonian constraint showed a larger error as it moved closer to the black hole horizon, it could approach zero if sufficient resolution was provided.
 
-The off-diagonal terms of $\gamma_{ij}$ have a slight relative error of the order of $10^{-7}$ in comparison with diagonal terms. This accumulates over time. Ignoring these small errors, we were able to confirm that the spatial metric was static and still spherically symmetric. We should either accept a variation form such as the BSSN equation, or try to do more accurate numerical calculations for better simulations.
+However, after more time, the spatial metric is no longer static and may even have fluctuating values. This is judged to be the limitation of the numerical method and the limitation of ADM. The problem that the analytic value of the extrinsic curvature in the initial situation does not match the expected 0 will also need to be addressed.
+
+It is well known that ADM equations are unstable during long time evolution, and more stable methods such as BSSN equation exist in recent studies. Therefore, it is necessary to identify the limitations of the ADM equations and study other 3+1 equations in the future.
+
+

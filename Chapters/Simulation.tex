@@ -59,7 +59,7 @@ In this simulation, we choose the lapse function and the shift vector
 \end{equation}
 
 \section{Initial data}
-After 3+1 decomposition, we should evolve forward in time some initial data. Instead of solving Hamiltonian and momentum constraint, we use well-known initial data from isotropic coordinates of Schwarzshcild metric. So the initial spatial metric becomes $\gamma_{ij}=(1+M/(2r))^4\delta_{ij}$ and the initial extrinsic curvature becomes $K_{ij} = 0$ since there is no time-dependent and zero shift.
+After 3+1 decomposition, we should evolve forward in time some initial data. Instead of solving Hamiltonian and momentum constraint, we use well-known initial data from isotropic coordinates of Schwarzshcild metric. So the initial spatial metric becomes $\gamma_{ij}=(1+M/(2r))^4\delta_{ij}$ and the initial extrinsic curvature becomes $K_{ij} = -\frac{1}{2}\mathcal{L}_{\bm{n}}\gamma_{ij} = 0$.
 
 We will show that these data satisfies Eq. (\ref{eq:hamiltonian_constraint}, \ref{eq:momentum_constraint}). Since $E$ and $p_i$ are all $0$ in vacuum space and $K_{ij}=0$, the momentum constraint is naturally satisfied. Now, to satisfy the hamiltonian constraint, we need to show that the 3-metric Ricci scalar $R$ is $0$. Let's use a spherical coordinate system here. The non-vanishing Ricci tensor is:
 \begin{align}
@@ -82,7 +82,7 @@ Arranging this, we get
 		&= f'(x_0) + \mathcal{O}(h).
 	\end{aligned}
 \end{equation}
-Accuracy is on the order of $\mathrm{O}(h)$.
+Accuracy is on the order of $\mathcal{O}(h)$.
 
 The central difference method selects the function value from $x-h$ and $x+h$, respectively, and has a more accurate error of $\mathcal{O}(h^2)$.
 \begin{equation}
@@ -91,7 +91,7 @@ The central difference method selects the function value from $x-h$ and $x+h$, r
 
 \subsection{Boundary condition}
 
-The isotropic coordinates of the schwarzschild metric only describe the region outside the black hole horizon, i.e. $r=\frac{M}{2}$. Therefore, $\gamma_{ij}$ and $K_{ij}$ did not evolve in the region of $r\le \frac{M}{2}$.
+The isotropic coordinates of the schwarzschild metric only describe the region outside the black hole horizon, i.e. $r=\frac{M}{2}$. Therefore, $\gamma_{ij}$ and $K_{ij}$ were fixed in the region of $r\le \frac{M}{2}$.
 
 At the boundary outside the grid, the physical quantity at the corresponding point was calculated using linear extrapolation. For example, when we need to find the derivative at $f_i$,
 \begin{align}
@@ -122,7 +122,7 @@ The size of the grid is $100^3$, the mass of the black hole is $0.2M$, and the g
 The results obtained at first do not change with time as shown in Fig. \ref{fig:0_data0}.
 \begin{figure}[H]
 	\centering
-	\input{Figures/0_data0.pgf}
+	\input{Figures/data1.pgf}
 	\caption{Flamm's paraboloid from the first simulation. It represents $\gamma_{xx}$ in the equatorial plane where $\theta = \frac{\pi}{2}$. The slope at each point represents the magnitude of $\gamma_{xx}$.}
 	\label{fig:0_data0}
 \end{figure}
